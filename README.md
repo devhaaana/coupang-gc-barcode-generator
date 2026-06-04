@@ -27,4 +27,4 @@ coupang에서 사용하는 GC 바코드를 생성하는 페이지입니다.
 
 웹 브라우저에서 다음 링크를 열어 바로 사용할 수 있습니다:
 
-[https://gc-barcode-generator.vercel.app](https://gc-barcode-generator.vercel.app)
+[https://coupang-gc-barcode-generator.vercel.app/](https://coupang-gc-barcode-generator.vercel.app/)
