@@ -1,0 +1,175 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+    --base-background-color: #f9f9f9;
+    --base-text-color: #333;
+
+    --highlight-color-blue: #3DACDC;
+    --highlight-color-green: #80BC27;
+    --highlight-color-yellow: #FAC000;
+    --highlight-color-red: #E94B22;
+    --highlight-color-brown: #894F24;
+
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    
+    --footer-text: #828c94;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard,
+				-apple-system, BlinkMacSystemFont, system-ui, Roboto,
+				"Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+				"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+				sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+
+    background: var(--base-background-color);
+    color: var(--base-text-color);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+}
+
+.logo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto 24px;
+    user-select: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.input-group input {
+    flex: 1;
+    min-width: 0;
+    height: 50px;
+    border: 1px solid #dcdfe6;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--highlight-color-red);
+    border-width: 2px;
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+}
+
+#btn {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+
+    background: var(--highlight-color-blue);
+    color: white;
+
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#btn:hover {
+    background: var(--highlight-color-green);
+}
+
+.barcode-wrapper {
+    margin-top: 32px;
+    padding: 24px;
+    border-radius: 16px;
+    background: #fafafa;
+    border: 1px solid #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+}
+
+#barcode {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+footer #name {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer #contact,
+footer #copyright {
+	font-size: 14px;
+	font-weight: 300;
+	color: var(--footer-text);
+	margin: 0;
+}
+
+footer #contact a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .input-group span {
+        display: none;
+    }
+}

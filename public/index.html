@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GC 바코드 생성기</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+	<div class="container">
+		<img src="assets/images/coupang-logo.png" alt="Coupang Logo" class="logo"/>
+		<h2>GC Barcode Generator</h2>
+
+		<div class="input-group">
+			<input id="text-1">
+			<span>-</span>
+
+			<input id="text-2">
+			<span>-</span>
+
+			<input id="text-3">
+			<span>-</span>
+
+			<input id="text-4">
+		</div>
+
+		<button id="btn">Generate Barcode</button>
+
+		<div class="barcode-wrapper">
+			<svg id="barcode"></svg>
+		</div>
+
+		<footer id="footer">
+			<p id="copyright">&copy; 2026 Hana Go. All rights reserved.</p>
+		</footer>
+	</div>
+
+	<script src="assets/js/generate-barcode.js"></script>
+
+</body>
+</html>
