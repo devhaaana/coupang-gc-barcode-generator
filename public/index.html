@@ -18,16 +18,18 @@
 			<input id="text-1" value="GC" disabled>
 			<span>-</span>
 
-			<input id="text-2">
+			<input id="text-2" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false">
 			<span>-</span>
 
-			<input id="text-3">
+			<input id="text-3" inputmode="numeric" maxlength="4">
 			<span>-</span>
 
-			<input id="text-4">
+			<input id="text-4" inputmode="numeric" maxlength="4">
 		</div>
 
 		<button id="btn">Generate Barcode</button>
+
+		<p id="input-message"></p>
 
 		<div class="barcode-wrapper">
 			<svg id="barcode"></svg>
